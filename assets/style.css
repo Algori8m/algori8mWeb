@@ -16,7 +16,7 @@ body{
 header{
   position: fixed;
   width: 100%;
-  height:50px;
+  height:80px;
   padding: 20px;
   box-sizing: border-box;
   box-shadow: 0px 1px 3px 1px rgba(87,87,87,0.525);
@@ -42,7 +42,7 @@ header{
 
 .desktopNavigationContainer{
   display: block; 
-  width: 40%;
+  width: 35%;
 }
 
 ul.desktopNavList{
@@ -56,7 +56,7 @@ ul.desktopNavList{
 }
 
 .desktopNavList li{
-  text-transform: uppercase;
+  text-transform: capitalize;
   list-style-type: none;
   font-size: 16px;
 }
@@ -119,11 +119,12 @@ section{
   margin-bottom: 80px;
   text-shadow: 0px 1px 1px rgba(56,56,57,0.5);
   color:white;
-  margin-top: 230px;
+  margin-top: 280px;
 }
 
 .landPage p{
   color: white;
+  letter-spacing: 2.5px;
 }
 
 .Nshape, .shape{
@@ -132,15 +133,19 @@ section{
 
 #services{
   width: 100%;
+  padding: 0 0 80px 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   box-sizing: border-box;
 }
 .serviceText{
-  width: 100%;
+  width: 15%;
   text-align: center;
   font-size: 2rem;
-  margin: 50px 0;
+  margin: 70px 0;
+  color: black;
+  border-bottom: 3px solid #008DD6;
 }
 
 div.servicesInner{
@@ -153,18 +158,32 @@ div.servicesInner{
 #services li{
   width: 30%;
   box-sizing: border-box;
-  padding: 30px 20px;
+  padding: 30px 50px;
   list-style-type: none;
   background-color: white;
+  color: black;
   margin: 0 0 40px 0;
   border-radius: 10px;
-  box-shadow: 0px 1px 10px 1px rgb(148, 148, 148);
+  box-shadow: 0px 1px 20px 3px rgb(189, 189, 189);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   line-height: 35px;
+}
+
+#services li h3{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#services li i{
+  transition: .5s;
+}
+
+#services li:hover i{
+  transform: rotate(90deg);
 }
 
 .webDesignIcon,.webDevelopmentIcon{
@@ -204,7 +223,7 @@ div.servicesInner{
 }
 
 #expertise .expertiseText{
-  width: 20%;
+  width: 25%;
   padding: 10px 0;
   margin: 50px 0;
   font-size: 2.5rem;
@@ -220,11 +239,14 @@ div.servicesInner{
   width: 100%;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
+  padding: 30px;
+  box-sizing: border-box;
 }
 
 .expertiseList li{
   width: 100%;
-  padding: 50px 0;
+  padding: 80px 0;
   box-sizing: border-box;
   list-style-type: none;
   text-align: center;
@@ -232,16 +254,32 @@ div.servicesInner{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: .5s;
 }
 
 .expertiseList li:hover{
-  box-shadow: 0px 0px 5px rgb(229,229,229);
+  box-shadow: 0px 0px 10px rgb(146, 146, 146);
   background-color: rgb(255,255,255);
-  color: rgb(227,227,227);
+  color: black;
+  transform: scale(1.1);
 }
 
 .expertiseList li:hover .fab{
-  color: rgb(227,227,227);
+  color: black;
+  animation: rotate;
+  animation-duration: .7s;
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(90deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
 }
 
 .expertIcon{
@@ -255,6 +293,7 @@ div.servicesInner{
 .fab{
   color:white;
   font-size:80px;
+  transition: .5s;
 }
 
 
@@ -752,6 +791,10 @@ section{
 .expertiseList li:hover{
   box-shadow: 0px 0px 5px rgb(229,229,229);
   background-color: rgb(255,255,255);
+}
+
+.expertiseList li:hover .fab{
+  color: black;
 }
 
 .expertIcon{
