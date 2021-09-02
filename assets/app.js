@@ -8,7 +8,7 @@ navLinks = [...navLinks]
 function showMenu(){
   if(navList.classList.contains("show")){
     navList.classList.remove("show")
-    header.style.boxShadow = "0px 1px 15px 5px #008DD6";
+    header.style.boxShadow = "0px 1px 3px 1px rgba(87,87,87,0.525)";
   }else{
     header.style.boxShadow = "none";
     navList.classList.add("show");
