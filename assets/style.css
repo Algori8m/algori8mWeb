@@ -266,6 +266,7 @@ div.servicesInner{
 
 .expertiseList li:hover .fab{
   color: black;
+  color: linear-gradient(90deg, #008DD6, #00000);
   animation: rotate;
   animation-duration: .7s;
 }
