@@ -177,7 +177,7 @@ div.servicesInner{
   color: black;
   margin: 0 0 40px 0;
   border-radius: 10px;
-  box-shadow: 0px 1px 20px 3px rgb(189, 189, 189);
+  box-shadow: 0px 1px 30px 5px #dddddd;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -196,7 +196,8 @@ div.servicesInner{
 }
 
 #services li:hover i{
-  transform: rotate(90deg);
+ animation: rotate;
+ animation-duration: 1s;
 }
 
 .webDesignIcon,.webDevelopmentIcon{
@@ -222,7 +223,7 @@ div.servicesInner{
 
 
 #expertise {
-  background-color:rgb(227,227,227);
+  background-color:#dbf6ff;
   color: black;
 }
 
@@ -282,15 +283,15 @@ div.servicesInner{
 }
 
 .expertiseList li:hover{
-  box-shadow: 0px 0px 10px rgb(146, 146, 146);
-  background-color: rgb(255,255,255);
-  color: black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgb(233,233,233);
+  background-color: #008DD6;
+  color: #dbf6ff;
   transform: scale(1.1);
 }
 
 .expertiseList li:hover .fab{
-  color: black;
-  color: linear-gradient(90deg, #008DD6, #00000);
+  color: white;
   animation: rotate;
   animation-duration: .7s;
 }
@@ -316,7 +317,7 @@ div.servicesInner{
   align-items: center;
 }
 .fab{
-  color:white;
+  color:#008DD6;
   font-size:80px;
   transition: .5s;
 }
@@ -466,6 +467,44 @@ footer div{
 .credit {
   text-align: center;
 }
+
+.hide{
+  animation: slideOut;
+  animation-duration:.5s;
+  animation-fill-mode: forwards;
+}
+
+.slide{
+  animation: slideIn;
+  animation-duration:1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+
+
+@keyframes slideIn{
+  0%{
+    transform: translate(0, 100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut{
+  0%{
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100%{
+    transform: translate(0,-10px);
+    opacity: 0;
+  }
+}
+
 
 
 
@@ -767,7 +806,6 @@ section{
   flex-direction:column;
   align-items: center;
   border-radius: 5px;
-  box-shadow: 0px 0px 4px #dddddd;
   
 }
 
@@ -808,13 +846,6 @@ section{
   color: orange;
 }
 
-
-
-#expertise {
-  background-color:rgb(227,227,227);
-  color: black;
-}
-
 .expertiseInner{
   width: 100%;
   display: flex;
@@ -852,14 +883,6 @@ section{
   align-items: center;
 }
 
-.expertiseList li:hover{
-  box-shadow: 0px 0px 5px rgb(229,229,229);
-  background-color: rgb(255,255,255);
-}
-
-.expertiseList li:hover .fab{
-  color: black;
-}
 
 .expertIcon{
   width: 100px;
@@ -870,7 +893,6 @@ section{
   align-items: center;
 }
 .fab{
-  color:white;
   font-size:80px;
 }
 
