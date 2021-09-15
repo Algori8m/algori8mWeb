@@ -6,7 +6,8 @@ let hiddenElements = document.querySelectorAll(".hide");
 let mobileNavLinks = document.querySelectorAll(".navList a")
 let greetingText= document.querySelector(".landPage ")
 let desc = document.querySelector(".landPage ")
-
+let credit = document.querySelector(".credit")
+let body = document.querySelector("body")
 hiddenElements = [...hiddenElements];
 navLinks = [...navLinks]
 mobileNavLinks = [...mobileNavLinks];
@@ -75,11 +76,9 @@ function scroll(){
     if(atTop && notPassed){
       element.classList.remove("hide");
       element.classList.add("slide");
-      console.log('Yes');
   }else{
       element.classList.add("hide");
       element.classList.remove("slide");
-      console.log("No");
   }
 });
 }
@@ -106,11 +105,25 @@ function checkSlide() {
 function showGreeting(){
   greetingText.classList.add("slide");
   desc.classList.add("slide");
-  console.log('Seen');
+  body.style.display = "block";
 }
 
 
 window.addEventListener("scroll", debounce(scroll));
 
 window.addEventListener("load", showGreeting);
+
+/*
+function up(){
+  console.log(window.scrollY);
+  console.log("Up");
+  window.scrollTo({
+    top:0,
+    left:0,
+    behavior:'smooth'
+  })
+}
+
+credit.addEventListener("click", up);
+*/
 
