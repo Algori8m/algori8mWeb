@@ -10,7 +10,7 @@ a{
 body{
   width: 100%;   
   height: 900px;
-  font-family:Verdana;
+  font-family:'Montserrat', sans-serif;
   display: none;
 }
 
@@ -18,7 +18,7 @@ header{
   position: fixed;
   width: 100%;
   height:80px;
-  padding: 20px;
+  padding: 20px 100px;
   box-sizing: border-box;
   box-shadow: 0px 1px 3px 1px rgba(87,87,87,0.525);
   display: flex;
@@ -43,7 +43,7 @@ header{
 
 .desktopNavigationContainer{
   display: block; 
-  width: 35%;
+  width: 45%;
 }
 
 ul.desktopNavList{
@@ -172,7 +172,7 @@ div.servicesInner{
 #services li{
   width: 30%;
   box-sizing: border-box;
-  padding: 30px 50px;
+  padding: 30px 30px;
   list-style-type: none;
   background-color: white;
   color: black;
@@ -193,6 +193,14 @@ div.servicesInner{
   font-weight: 600;
   margin: 0 0 20px;
   color: #008DD6;
+<<<<<<< HEAD
+=======
+}
+
+#services li p{
+  width:90%;
+  margin: 0  0 20px 0;
+>>>>>>> testing
 }
 
 #services li i{
@@ -223,6 +231,12 @@ div.servicesInner{
 .fa-paint-brush{
   color: orange;
 }
+
+.price{
+  color: #ffb600;
+  font-weight: bold;
+}
+
 
 
 
@@ -373,7 +387,11 @@ div.servicesInner{
 .ourWorksList li{
   min-width: 35%;
   max-width: 35%;
+<<<<<<< HEAD
   height: aut;
+=======
+  height: auto;
+>>>>>>> testing
   padding: 80px 20px;
   margin: 0 0 20px 0;
   box-sizing: border-box;
