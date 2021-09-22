@@ -464,6 +464,19 @@ section{
   box-shadow: 1px 1px 4px #e7e7e7;
 }
 
+#contactUs .fab{
+  font-size: 1.5rem;
+  color: white;
+}
+#contactUs .fas{
+  font-size: 1.5rem;
+  color: white;
+}
+
+.cCall {
+  margin:20px 0;
+}
+
 
 footer{
   width: 100%;
