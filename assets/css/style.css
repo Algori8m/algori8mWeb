@@ -10,7 +10,7 @@ a{
 body{
   width: 100%;   
   height: 900px;
-  font-family:Verdana;
+  font-family:'Montserrat', sans-serif;
   display: none;
 }
 
@@ -18,7 +18,7 @@ header{
   position: fixed;
   width: 100%;
   height:80px;
-  padding: 20px;
+  padding: 20px 100px;
   box-sizing: border-box;
   box-shadow: 0px 1px 3px 1px rgba(87,87,87,0.525);
   display: flex;
@@ -43,7 +43,7 @@ header{
 
 .desktopNavigationContainer{
   display: block; 
-  width: 35%;
+  width: 45%;
 }
 
 ul.desktopNavList{
@@ -172,7 +172,7 @@ div.servicesInner{
 #services li{
   width: 30%;
   box-sizing: border-box;
-  padding: 30px 50px;
+  padding: 30px 30px;
   list-style-type: none;
   background-color: white;
   color: black;
@@ -185,11 +185,19 @@ div.servicesInner{
   align-items: center;
   text-align: center;
   line-height: 35px;
+  font-size: 1.2rem;
 }
 
 #services li h3{
-  font-size: 18px;
+  font-size: 1.5rem;
   font-weight: 600;
+  margin: 0 0 20px;
+  color: #008DD6;
+}
+
+#services li p{
+  width:90%;
+  margin: 0  0 20px 0;
 }
 
 #services li i{
@@ -205,7 +213,7 @@ div.servicesInner{
   width: 100px;
   height:100px;
   border-radius: 50%;
-  margin: 20px 0 20px 0;
+  margin: 20px 0 30px 0;
   background-color: rgba(185, 185, 185, 0.363);
   display: flex;
   justify-content: center;
@@ -220,6 +228,12 @@ div.servicesInner{
 .fa-paint-brush{
   color: orange;
 }
+
+.price{
+  color: #ffb600;
+  font-weight: bold;
+}
+
 
 
 
@@ -258,7 +272,7 @@ div.servicesInner{
 } 
 
 #expertise li h4{
-  font-size: 1.2rem;
+  font-size: 1.7rem;
 }
 
 .expertiseList{
@@ -368,7 +382,9 @@ div.servicesInner{
 }
 
 .ourWorksList li{
-  width: 40%;
+  min-width: 35%;
+  max-width: 35%;
+  height: auto;
   padding: 80px 20px;
   margin: 0 0 20px 0;
   box-sizing: border-box;
@@ -379,28 +395,20 @@ div.servicesInner{
   justify-content: center;
   align-items: center;
   transition: .5s;
-  line-height: 20px;
+  line-height: 30px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px #bebebe;
   transform: scale(1.2);
+  background-color:white;
+  font-size: 1.2rem;
+  
 }
 
 
 #ourWorks li h4{
-  margin:0 0 15px 0;
+  font-size: 1.7rem;
+  margin:0 0 25px 0;
 } 
-
-.oliver{
-  min-width: 35%;
-  height:auto;
-  background-color:#f9c124;
-}
-
-.digitall{
-  min-width: 35%;
-  height:auto;
-  background-color:#e4148e;
-}
 
 .workLink{
   width:30%;
@@ -409,15 +417,20 @@ div.servicesInner{
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  background-color:white;
-  color: #fa9b02;
+  background-color:#fdc000;
+  color: black;
   margin: 30px 0 0 0;
   text-decoration: none;
   font-weight: bold;
 }
 
+/*.oliver .workLink{*/
+/*  background-color:#fdb800;*/
+/*}*/
 
-
+/*.digitall .workLink{ */
+/*  background-color:#e4148e;*/
+/*} */
 
 #contactUs{
   width:100%;
@@ -427,8 +440,23 @@ div.servicesInner{
 }
 
 .contactInner{
+  width:100%;
   margin:0 auto;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
   color: black;
+}
+
+.contactInner div{
+  padding:10px 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  background-color:black;
+  margin:0 0 20px 0;
+  border-radius: 10px;
 }
 
 
