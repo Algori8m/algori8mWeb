@@ -559,8 +559,13 @@ div.servicesInner{
 }
 
 .whatsAppLink{
+  background-color:#25d366;
   text-decoration: none;
   color: white;
+  height: 30px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cCall {
