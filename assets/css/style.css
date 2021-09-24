@@ -559,7 +559,7 @@ div.servicesInner{
 }
 
 .whatsAppLink{
-  background-color:#25d366;
+ /* background-color:#25d366; */
   text-decoration: none;
   color: white;
   height: 30px;
