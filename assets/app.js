@@ -70,16 +70,16 @@ function scroll(){
     
     const atTop = scrolled > top;
     const notPassed = window.scrollY < elementBottom;
-   // const scrolledIn = scrolled <
-    
     
     if(atTop && notPassed){
       element.classList.remove("hide");
       element.classList.add("slide");
-  }else{
+  }
+  
+  /*else{
       element.classList.add("hide");
       element.classList.remove("slide");
-  }
+  }*/
 });
 }
 
